@@ -2,7 +2,7 @@ require 'gosu'
 
 class Player
   def initialize
-    @image = Gosu::Image.new("starfighter.bmp")
+    @image = Gosu::Image.new("images/starfighter.bmp")
     @x = @y = @vel_x = @vel_y = @angle = 0.0
     @score = 0
   end

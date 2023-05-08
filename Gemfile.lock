@@ -1,0 +1,12 @@
+GEM
+  specs:
+    gosu (1.4.5)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  gosu
+
+BUNDLED WITH
+   2.4.10
