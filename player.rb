@@ -2,7 +2,7 @@ require 'gosu'
 
 class Player
   def initialize
-    @image = Gosu::Image.new("images/starfighter.bmp")
+    @image = Gosu::Image.new("starfighter.bmp")
     @x = @y = @vel_x = @vel_y = @angle = 0.0
     @score = 0
   end
@@ -36,5 +36,13 @@ class Player
 
   def draw
     @image.draw_rot(@x, @y, 1, @angle)
+  end
+
+  def score
+    @score
+  end
+
+  def collect_stars(stars)
+    stars.reject! { |star| Gosu.distance(@x, @y, star.x, star.y) < 35 }
   end
 end
